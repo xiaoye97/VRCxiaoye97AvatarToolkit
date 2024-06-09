@@ -62,5 +62,3 @@ crashlytics-build.properties
 Assets/PackageMakerWindowData.asset*
 .idea
 .vscode
-
-!com.xiaoye97.avatar-toolkit

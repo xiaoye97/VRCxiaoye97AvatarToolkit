@@ -1,0 +1,23 @@
+{
+    "name": "com.xiaoye97.avatar-toolkit",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3456780c4fb2d324ab9c633d6f1b0ddb",
+        "GUID:5718fb738711cd34ea54e9553040911d",
+        "GUID:62ced99b048af7f4d8dfe4bed8373d76",
+        "GUID:fe747755f7b44e048820525b07f9b956",
+        "GUID:fc900867c0f47cd49b6e2ae4ef907300",
+        "GUID:d689052aa981bf8459346a530f6e6678",
+        "GUID:04a7e5cf006503242b1db329a84d694d",
+        "GUID:71d9dcc7d30ab1c45866d01afa59b6cf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
