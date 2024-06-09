@@ -44,6 +44,8 @@ nadena https://vpm.vrczh.org/vpm/nadena
 
 hai-vr https://vpm.vrczh.org/vpm/hai-vr
 
+xiaoye97 https://vpm.vrczh.org/vpm/VRCxiaoye97AvatarToolkit
+
 ### 新建项目
 
 添加好仓库后, 新建2022Avatar模板项目, 并添加以下包
