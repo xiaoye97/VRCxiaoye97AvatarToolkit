@@ -1,1 +1,80 @@
-{"dependencies": {}, "locked": {}}
+{
+  "dependencies": {
+    "com.vrchat.base": {
+      "version": "3.6.1"
+    },
+    "com.vrchat.avatars": {
+      "version": "3.6.1"
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.29"
+    },
+    "vrchat.blackstartx.gesture-manager": {
+      "version": "3.9.1"
+    },
+    "nadena.dev.modular-avatar": {
+      "version": "1.9.13"
+    },
+    "dev.hai-vr.animator-as-code.v1": {
+      "version": "1.0.9930"
+    },
+    "dev.hai-vr.animator-as-code.v1.vrchat": {
+      "version": "1.0.9930"
+    },
+    "dev.hai-vr.animator-as-code.v1.modular-avatar": {
+      "version": "1.0.9921"
+    }
+  },
+  "locked": {
+    "com.vrchat.base": {
+      "version": "3.6.1",
+      "dependencies": {}
+    },
+    "com.vrchat.avatars": {
+      "version": "3.6.1",
+      "dependencies": {
+        "com.vrchat.base": "3.6.1"
+      }
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.29",
+      "dependencies": {}
+    },
+    "vrchat.blackstartx.gesture-manager": {
+      "version": "3.9.1",
+      "dependencies": {
+        "com.vrchat.avatars": ">=3.5.2 < 3.7.X"
+      }
+    },
+    "nadena.dev.modular-avatar": {
+      "version": "1.9.13",
+      "dependencies": {
+        "com.vrchat.avatars": ">=3.4.0",
+        "nadena.dev.ndmf": ">=1.4.1 <2.0.0-a"
+      }
+    },
+    "nadena.dev.ndmf": {
+      "version": "1.4.1",
+      "dependencies": {}
+    },
+    "dev.hai-vr.animator-as-code.v1": {
+      "version": "1.0.9930",
+      "dependencies": {}
+    },
+    "dev.hai-vr.animator-as-code.v1.vrchat": {
+      "version": "1.0.9930",
+      "dependencies": {
+        "dev.hai-vr.animator-as-code.v1": "^1.0.0",
+        "com.vrchat.avatars": "^3.3.0"
+      }
+    },
+    "dev.hai-vr.animator-as-code.v1.modular-avatar": {
+      "version": "1.0.9921",
+      "dependencies": {
+        "dev.hai-vr.animator-as-code.v1": "1.0.x",
+        "nadena.dev.modular-avatar": "^1.8.0",
+        "com.vrchat.avatars": "^3.3.0"
+      }
+    }
+  }
+}
