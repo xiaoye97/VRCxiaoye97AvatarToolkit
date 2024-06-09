@@ -212,5 +212,9 @@ xiaoye97 https://vpm.vrczh.org/vpm/VRCxiaoye97AvatarToolkit
 
 此时, 使用XYParameterRegister, 并将VRC Expression Parameters资源拖入`ParameterAsset`属性中, 即可生成一个对应这些参数的MAParameter, 来达到非破坏性添加的效果.
 
+# 代办事项
+
+- 添加多语言
+
 [1]:https://modular-avatar.nadena.dev/docs/intro
 [2]:https://docs.hai-vr.dev/docs/products/animator-as-code
