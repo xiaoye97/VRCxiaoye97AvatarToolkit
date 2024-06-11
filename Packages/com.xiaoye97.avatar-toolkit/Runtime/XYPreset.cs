@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using VRC.SDKBase;
@@ -38,3 +39,4 @@ namespace xiaoye97.AvatarToolkit
         public float Value;
     }
 }
+#endif

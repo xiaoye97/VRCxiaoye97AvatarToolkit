@@ -1,22 +1,17 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using AnimatorAsCode.V1;
+using UnityEditor;
 using UnityEngine;
 
 namespace xiaoye97.AvatarToolkit
 {
     public static class AacInternalsCopy
     {
-        public class EditorCurveBindingCopy
-        {
-            public string path;
-            public System.Type type;
-            public string propertyName;
-        }
-
-        internal static EditorCurveBindingCopy Binding(AacConfiguration component, Type type, Transform transform,
+        internal static EditorCurveBinding Binding(AacConfiguration component, Type type, Transform transform,
             string propertyName)
         {
-            return new EditorCurveBindingCopy
+            return new EditorCurveBinding
             {
                 path = ResolveRelativePath(component.AnimatorRoot, transform),
                 type = type,
@@ -24,7 +19,7 @@ namespace xiaoye97.AvatarToolkit
             };
         }
 
-        internal static void SetCurve(AnimationClip clip, EditorCurveBindingCopy binding, AnimationCurve curve)
+        internal static void SetCurve(AnimationClip clip, EditorCurveBinding binding, AnimationCurve curve)
         {
             // https://forum.unity.com/threads/new-animationclip-property-names.367288/#post-2384172
             clip.SetCurve(binding.path, binding.type, binding.propertyName, curve);
@@ -56,10 +51,11 @@ namespace xiaoye97.AvatarToolkit
             return item.name;
         }
 
-        internal static EditorCurveBindingCopy ToSubBinding(EditorCurveBindingCopy binding, string suffix)
+        internal static EditorCurveBinding ToSubBinding(EditorCurveBinding binding, string suffix)
         {
-            return new EditorCurveBindingCopy
+            return new EditorCurveBinding
                 { path = binding.path, type = binding.type, propertyName = binding.propertyName + "." + suffix };
         }
     }
 }
+#endif

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using VRC.SDKBase;
 
 namespace xiaoye97.AvatarToolkit
@@ -10,3 +11,4 @@ namespace xiaoye97.AvatarToolkit
     {
     }
 }
+#endif

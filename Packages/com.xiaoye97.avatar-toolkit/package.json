@@ -1,7 +1,7 @@
 {
   "name": "com.xiaoye97.avatar-toolkit",
   "displayName": "xiaoye97 Avatar Toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "xiaoye97's VRChat avatar toolkit.",
   "gitDependencies": {},
   "vpmDependencies": {
