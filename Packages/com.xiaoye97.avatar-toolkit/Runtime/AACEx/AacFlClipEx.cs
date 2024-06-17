@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿#if UNITY_EDITOR
+using System.Reflection;
 using AnimatorAsCode.V1;
 using UnityEngine;
 
@@ -68,3 +69,4 @@ namespace xiaoye97.AvatarToolkit.AACEx
         }
     }
 }
+#endif

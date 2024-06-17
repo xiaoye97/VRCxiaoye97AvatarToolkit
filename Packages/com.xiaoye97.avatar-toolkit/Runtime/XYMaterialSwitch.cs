@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -60,3 +61,4 @@ namespace xiaoye97.AvatarToolkit
         public Texture2D MenuIcon;
     }
 }
+#endif

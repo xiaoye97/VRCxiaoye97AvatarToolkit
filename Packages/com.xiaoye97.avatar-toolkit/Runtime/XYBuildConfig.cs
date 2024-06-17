@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.Collections.Generic;
 
 namespace xiaoye97.AvatarToolkit
@@ -18,3 +19,4 @@ namespace xiaoye97.AvatarToolkit
         public bool Enable;
     }
 }
+#endif

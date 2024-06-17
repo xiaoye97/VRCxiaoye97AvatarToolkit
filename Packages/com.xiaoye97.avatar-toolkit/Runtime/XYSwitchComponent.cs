@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 
 namespace xiaoye97.AvatarToolkit
 {
@@ -12,3 +13,4 @@ namespace xiaoye97.AvatarToolkit
         [Header("菜单")] public XYRegisterMenuData RegisterMenuData;
     }
 }
+#endif

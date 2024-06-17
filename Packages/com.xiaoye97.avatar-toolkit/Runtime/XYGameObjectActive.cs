@@ -1,4 +1,5 @@
-﻿namespace xiaoye97.AvatarToolkit
+﻿#if UNITY_EDITOR
+namespace xiaoye97.AvatarToolkit
 {
     /// <summary>
     /// 在构建时设置当前物体的激活
@@ -14,3 +15,4 @@
         }
     }
 }
+#endif

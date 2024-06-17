@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using nadena.dev.modular_avatar.core;
@@ -53,3 +54,4 @@ namespace xiaoye97.AvatarToolkit
         }
     }
 }
+#endif

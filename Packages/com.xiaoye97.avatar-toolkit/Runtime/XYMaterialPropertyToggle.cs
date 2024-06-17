@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.Collections.Generic;
 using AnimatorAsCode.V1;
 using UnityEngine;
@@ -70,3 +71,4 @@ namespace xiaoye97.AvatarToolkit
         public MaterialPropertyValue FalseValue;
     }
 }
+#endif

@@ -1,4 +1,5 @@
-﻿using System;
+#if UNITY_EDITOR
+using System;
 using UnityEngine;
 using VRC.SDKBase;
 
@@ -12,3 +13,4 @@ namespace xiaoye97.AvatarToolkit
     {
     }
 }
+#endif

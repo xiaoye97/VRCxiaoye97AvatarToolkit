@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using VRC.Core;
@@ -33,3 +34,4 @@ namespace xiaoye97.AvatarToolkit
         }
     }
 }
+#endif

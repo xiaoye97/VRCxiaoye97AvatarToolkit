@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using xiaoye97.AvatarToolkit.AACEx;
 
 namespace xiaoye97.AvatarToolkit
@@ -36,3 +37,4 @@ namespace xiaoye97.AvatarToolkit
         }
     }
 }
+#endif

@@ -1,4 +1,5 @@
-﻿using nadena.dev.modular_avatar.core;
+﻿#if UNITY_EDITOR
+using nadena.dev.modular_avatar.core;
 using UnityEngine;
 using VRC.SDK3.Avatars.ScriptableObjects;
 using VRC.SDKBase;
@@ -96,3 +97,4 @@ namespace xiaoye97.AvatarToolkit
         }
     }
 }
+#endif

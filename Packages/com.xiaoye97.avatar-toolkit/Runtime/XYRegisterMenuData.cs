@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using UnityEngine;
 
 namespace xiaoye97.AvatarToolkit
@@ -24,3 +25,4 @@ namespace xiaoye97.AvatarToolkit
         }
     }
 }
+#endif
