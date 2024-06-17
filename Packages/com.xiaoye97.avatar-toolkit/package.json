@@ -1,11 +1,15 @@
 {
   "name": "com.xiaoye97.avatar-toolkit",
   "displayName": "xiaoye97 Avatar Toolkit",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "xiaoye97's VRChat avatar toolkit.",
   "gitDependencies": {},
   "vpmDependencies": {
-    "com.vrchat.avatars": "3.6.1"
+    "com.vrchat.avatars": ">=3.6.1",
+    "nadena.dev.modular-avatar": ">=1.9.13",
+    "dev.hai-vr.animator-as-code.v1": ">=1.0.9930",
+    "dev.hai-vr.animator-as-code.v1.vrchat": ">=1.0.9930",
+    "dev.hai-vr.animator-as-code.v1.modular-avatar": ">=1.0.9921"
   },
   "author": {
     "name": "xiaoye97",
@@ -15,11 +19,5 @@
   "legacyFolders": {},
   "legacyFiles": {},
   "localPath": "C:\\Github\\VRCxiaoye97AvatarToolkit\\Packages\\com.xiaoye97.avatar-toolkit",
-  "unity": "2022.3",
-  "dependencies": {
-    "nadena.dev.modular-avatar": "1.9.13",
-    "dev.hai-vr.animator-as-code.v1": "1.0.9930",
-    "dev.hai-vr.animator-as-code.v1.vrchat": "1.0.9930",
-    "dev.hai-vr.animator-as-code.v1.modular-avatar": "1.0.9921"
-  }
+  "unity": "2022.3"
 }

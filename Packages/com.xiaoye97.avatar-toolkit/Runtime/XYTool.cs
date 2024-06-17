@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using nadena.dev.modular_avatar.core;
 using UnityEngine;
 
 namespace xiaoye97.AvatarToolkit
@@ -80,7 +81,13 @@ namespace xiaoye97.AvatarToolkit
             var list = gameObjects.ToList();
             for (int i = list.Count - 1; i >= 0; i--)
             {
-                if (names.Contains(list[i].name))
+                var go = list[i];
+                if (names.Contains(go.name))
+                {
+                    list.RemoveAt(i);
+                }
+                // 修复根骨骼与角色根骨骼名字不一样导致的角色根骨骼错误隐藏的问题
+                if (go.GetComponent<ModularAvatarMergeArmature>())
                 {
                     list.RemoveAt(i);
                 }

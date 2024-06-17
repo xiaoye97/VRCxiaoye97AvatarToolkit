@@ -164,13 +164,22 @@ namespace xiaoye97.AvatarToolkit
             }
             else
             {
-                for (int i = 0; i < CTX.AvatarRootTransform.childCount; i++)
+                var animator = CTX.AvatarRootTransform.GetComponent<Animator>();
+                if (animator != null && animator.isHuman)
                 {
-                    var t = CTX.AvatarRootTransform.GetChild(i);
-                    if (t.name == DefaultArmatureName)
+                    var hips = animator.GetBoneTransform(HumanBodyBones.Hips);
+                    armature = hips.parent;
+                }
+                else
+                {
+                    for (int i = 0; i < CTX.AvatarRootTransform.childCount; i++)
                     {
-                        armature = t;
-                        break;
+                        var t = CTX.AvatarRootTransform.GetChild(i);
+                        if (t.name == DefaultArmatureName)
+                        {
+                            armature = t;
+                            break;
+                        }
                     }
                 }
             }

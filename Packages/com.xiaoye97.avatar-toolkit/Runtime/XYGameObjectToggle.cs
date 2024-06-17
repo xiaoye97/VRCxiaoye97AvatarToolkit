@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 namespace xiaoye97.AvatarToolkit
@@ -20,6 +21,12 @@ namespace xiaoye97.AvatarToolkit
 
             GameObject[] objs =
                 gameObject.GetAllChildGameObjects(true, new List<Type>() { typeof(XYGameObjectToggle) });
+            StringBuilder sb = new StringBuilder();
+            foreach (var obj in objs)
+            {
+                sb.AppendLine(obj.name);
+            }
+            Debug.Log($"[{gameObject.name}]收集到了以下物体:\n{sb}");
             // 排除原角色骨骼物体
             objs = XYTool.RemoveGameObjectItemByName(objs, plugin.ArmatureGameobjectList);
             var layer = plugin.FxController.NewLayer($"开关_{ParameterName}");

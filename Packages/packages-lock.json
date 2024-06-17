@@ -205,12 +205,7 @@
       "version": "file:com.xiaoye97.avatar-toolkit",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "nadena.dev.modular-avatar": "1.9.13",
-        "dev.hai-vr.animator-as-code.v1": "1.0.9930",
-        "dev.hai-vr.animator-as-code.v1.vrchat": "1.0.9930",
-        "dev.hai-vr.animator-as-code.v1.modular-avatar": "1.0.9921"
-      }
+      "dependencies": {}
     },
     "dev.hai-vr.animator-as-code.v1": {
       "version": "file:dev.hai-vr.animator-as-code.v1",
