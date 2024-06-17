@@ -64,8 +64,6 @@ xiaoye97 https://vpm.vrczh.org/vpm/VRCxiaoye97AvatarToolkit
 
 在MA生成的Avatar Menu物体上, 添加`XYMenuManager`组件, 这个组件是用于自动化注册菜单的.
 
-在模型的根骨骼上添加一个`XYArmatureName`组件, 如果模型的根骨骼名字为`Armature`且大小写也一样, 则可以不添加此组件, 此组件用于定位根骨骼位置.
-
 ## 一些组件通用的属性的说明
 
 `ParameterName` 参数名, 会自动注册到模型的参数列表, 并且在动画状态机中也会自动创建, 不要起重复的参数名.
