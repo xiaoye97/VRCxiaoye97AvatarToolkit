@@ -22,7 +22,15 @@ namespace xiaoye97.AvatarToolkit
             {
                 foreach (var bsd in OnBlendShapeDatas)
                 {
-                    clip.BlendShape(bsd.Renderer, bsd.BlendShapeName, bsd.Value);
+                    int index = bsd.Renderer.sharedMesh.GetBlendShapeIndex(bsd.BlendShapeName);
+                    if (index > 0)
+                    {
+                        clip.BlendShape(bsd.Renderer, bsd.BlendShapeName, bsd.Value);
+                    }
+                    else
+                    {
+                        Debug.LogError($"{bsd.Renderer.name}中不存在blend shape[{bsd.BlendShapeName}], 请检查");
+                    }
                 }
             }
 
