@@ -489,7 +489,7 @@ Material:
     - _MatCapZRotCancel: 1
     - _Metallic: 0
     - _Mode: 0
-    - _MonochromeLighting: 0.237
+    - _MonochromeLighting: 0.4
     - _OcclusionStrength: 1
     - _OffsetFactor: 0
     - _OffsetUnits: 0
